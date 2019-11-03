@@ -1,0 +1,240 @@
+F:/FPGAProject/DigitalClock/FreDiv.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/FreDiv.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module FreDiv
+
+Top level modules:
+	FreDiv
+
+} {} {}} F:/FPGAProject/DigitalClock/timerMod.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/timerMod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module timerMod
+
+Top level modules:
+	timerMod
+
+} {} {}} F:/FPGAProject/DigitalClock/smg_encode_immdmod.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/smg_encode_immdmod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module smg_encode_immdmod
+
+Top level modules:
+	smg_encode_immdmod
+
+} {} {}} F:/FPGAProject/DigitalClock/dateDisplay.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/dateDisplay.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module dateDisplay
+
+Top level modules:
+	dateDisplay
+
+} {} {}} F:/FPGAProject/DigitalClock/RAM_inst.v {0 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/RAM_inst.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: F:/FPGAProject/DigitalClock/RAM_inst.v(1): near "RAM": syntax error, unexpected IDENTIFIER, expecting class
+
+} {3.0 4.0} {}} F:/FPGAProject/DigitalClock/hourCounter.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/hourCounter.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module hourCounter
+
+Top level modules:
+	hourCounter
+
+} {} {}} F:/FPGAProject/DigitalClock/iicBasemod.v {0 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/iicBasemod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module iicBasemod
+** Error: F:/FPGAProject/DigitalClock/iicBasemod.v(99): (vlog-2730) Undefined variable: 'iRead'.
+
+** Error: F:/FPGAProject/DigitalClock/iicBasemod.v(121): (vlog-2388) 'iRead' already declared in this scope (iicBasemod).
+
+** Error: F:/FPGAProject/DigitalClock/iicBasemod.v(122): (vlog-2388) 'D1' already declared in this scope (iicBasemod).
+
+** Error: F:/FPGAProject/DigitalClock/iicBasemod.v(123): (vlog-2388) 'D2' already declared in this scope (iicBasemod).
+
+** Error: F:/FPGAProject/DigitalClock/iicBasemod.v(124): (vlog-2388) 'isCall' already declared in this scope (iicBasemod).
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0} {}} F:/FPGAProject/DigitalClock/RAM.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/RAM.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} F:/FPGAProject/DigitalClock/smg_basemod.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/smg_basemod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module smg_basemod
+
+Top level modules:
+	smg_basemod
+
+} {} {}} F:/FPGAProject/DigitalClock/alarmClock.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/alarmClock.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module alarmClock
+
+Top level modules:
+	alarmClock
+
+} {} {}} F:/FPGAProject/DigitalClock/smg_funcmod.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/smg_funcmod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module smg_funcmod
+
+Top level modules:
+	smg_funcmod
+
+} {} {}} F:/FPGAProject/DigitalClock/DigitalClock.v {0 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/DigitalClock.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module DigitalClock
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(60): (vlog-2730) Undefined variable: 'oData'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'hour_set1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'hour_set0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'minute_set1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'minute_set0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'year1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'year0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'month1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'month0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'day1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'day0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmHour1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmHour0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmMinute1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmMinute0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMinute1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMinute0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchSecond1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchSecond0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMicroSecond1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMicroSecond0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerHour1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerHour0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerMinute1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerMinute0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerSecond1'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerSecond0'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(388): (vlog-2730) Undefined variable: 'alarm'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(388): (vlog-2730) Undefined variable: 'alarmFlag'.
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(392): (vlog-2388) 'year1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(392): (vlog-2388) 'year0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(393): (vlog-2388) 'month1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(393): (vlog-2388) 'month0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(394): (vlog-2388) 'day1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(394): (vlog-2388) 'day0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set3' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set2' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(431): (vlog-2388) 'month_set1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(431): (vlog-2388) 'month_set0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(432): (vlog-2388) 'day_set1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(432): (vlog-2388) 'day_set0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(513): (vlog-2388) 'alarmFlag' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(533): (vlog-2388) 'alarm' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmHour1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmHour0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmMinute1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmMinute0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(558): (vlog-2388) 'stopWatchMinute1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(558): (vlog-2388) 'stopWatchMinute0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(559): (vlog-2388) 'stopWatchSecond1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(559): (vlog-2388) 'stopWatchSecond0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(560): (vlog-2388) 'stopWatchMicroSecond1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(560): (vlog-2388) 'stopWatchMicroSecond0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(577): (vlog-2388) 'oData' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(578): (vlog-2388) 'rdDone' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(594): (vlog-2388) 'timerHour1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(594): (vlog-2388) 'timerHour0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(595): (vlog-2388) 'timerMinute1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(595): (vlog-2388) 'timerMinute0' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(596): (vlog-2388) 'timerSecond1' already declared in this scope (DigitalClock).
+
+** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(596): (vlog-2388) 'timerSecond0' already declared in this scope (DigitalClock).
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 26.0 27.0 28.0 29.0 30.0 31.0 32.0 33.0 34.0 35.0 36.0 37.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 78.0 79.0 80.0 81.0 82.0 83.0 84.0 85.0 86.0 87.0 88.0 89.0 90.0 91.0 92.0 93.0 94.0 95.0 96.0 97.0 98.0 99.0 100.0 101.0 102.0 103.0 104.0 105.0 106.0 107.0 108.0 109.0 110.0 111.0 112.0 113.0 114.0 115.0 116.0 117.0 118.0 119.0 120.0 121.0 122.0 123.0 124.0 125.0 126.0 127.0 128.0 129.0} {}} F:/FPGAProject/DigitalClock/iic_savemod.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/iic_savemod.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module iic_savemod
+
+Top level modules:
+	iic_savemod
+
+} {} {}} F:/FPGAProject/DigitalClock/RAM_bb.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/RAM_bb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} F:/FPGAProject/DigitalClock/minCounter.v {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/minCounter.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module minCounter
+
+Top level modules:
+	minCounter
+
+} {} {}} F:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo {1 {vlog -work work -stats=none F:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module DigitalClock
+
+Top level modules:
+	DigitalClock
+
+} {} {}}

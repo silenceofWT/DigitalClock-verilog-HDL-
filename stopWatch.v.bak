@@ -1,0 +1,19 @@
+//秒表模块
+module stopwatch(
+	clk,
+	f500hz,
+	start,
+	F_out);
+	input  clk,f500hz,start;  //start为控制秒表信号
+	output F_out;    //输出，秒表工作方式
+	reg F_out;  
+	always @(start or clk or f500hz)
+	begin
+			case(start)
+			  1'b0:F_out=clk;
+			  1'b1:F_out=f500hz;
+			  default:F_out=1'b0;
+			endcase
+	end
+endmodule
+

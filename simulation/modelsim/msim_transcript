@@ -1,0 +1,173 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl
+# do DigitalClock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGAProject/DigitalClock {F:/FPGAProject/DigitalClock/hourCounter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:59:52 on Oct 20,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGAProject/DigitalClock" F:/FPGAProject/DigitalClock/hourCounter.v 
+# -- Compiling module hourCounter
+# 
+# Top level modules:
+# 	hourCounter
+# End time: 14:59:52 on Oct 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGAProject/DigitalClock {F:/FPGAProject/DigitalClock/minCounter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:59:53 on Oct 20,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGAProject/DigitalClock" F:/FPGAProject/DigitalClock/minCounter.v 
+# -- Compiling module minCounter
+# 
+# Top level modules:
+# 	minCounter
+# End time: 14:59:53 on Oct 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGAProject/DigitalClock {F:/FPGAProject/DigitalClock/DigitalClock.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:59:53 on Oct 20,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGAProject/DigitalClock" F:/FPGAProject/DigitalClock/DigitalClock.v 
+# -- Compiling module DigitalClock
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(60): (vlog-2730) Undefined variable: 'oData'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'hour_set1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'hour_set0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'minute_set1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(106): (vlog-2388) 'minute_set0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'year1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'year0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'month1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'month0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'day1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(142): (vlog-2730) Undefined variable: 'day0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmHour1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmHour0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmMinute1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(144): (vlog-2730) Undefined variable: 'alarmMinute0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMinute1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMinute0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchSecond1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchSecond0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMicroSecond1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(146): (vlog-2730) Undefined variable: 'stopWatchMicroSecond0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerHour1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerHour0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerMinute1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerMinute0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerSecond1'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(148): (vlog-2730) Undefined variable: 'timerSecond0'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(388): (vlog-2730) Undefined variable: 'alarm'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(388): (vlog-2730) Undefined variable: 'alarmFlag'.
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(392): (vlog-2388) 'year1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(392): (vlog-2388) 'year0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(393): (vlog-2388) 'month1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(393): (vlog-2388) 'month0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(394): (vlog-2388) 'day1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(394): (vlog-2388) 'day0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set3' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set2' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(430): (vlog-2388) 'year_set0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(431): (vlog-2388) 'month_set1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(431): (vlog-2388) 'month_set0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(432): (vlog-2388) 'day_set1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(432): (vlog-2388) 'day_set0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(513): (vlog-2388) 'alarmFlag' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(533): (vlog-2388) 'alarm' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmHour1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmHour0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmMinute1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(534): (vlog-2388) 'alarmMinute0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(558): (vlog-2388) 'stopWatchMinute1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(558): (vlog-2388) 'stopWatchMinute0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(559): (vlog-2388) 'stopWatchSecond1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(559): (vlog-2388) 'stopWatchSecond0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(560): (vlog-2388) 'stopWatchMicroSecond1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(560): (vlog-2388) 'stopWatchMicroSecond0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(577): (vlog-2388) 'oData' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(578): (vlog-2388) 'rdDone' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(594): (vlog-2388) 'timerHour1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(594): (vlog-2388) 'timerHour0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(595): (vlog-2388) 'timerMinute1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(595): (vlog-2388) 'timerMinute0' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(596): (vlog-2388) 'timerSecond1' already declared in this scope (DigitalClock).
+# 
+# ** Error: F:/FPGAProject/DigitalClock/DigitalClock.v(596): (vlog-2388) 'timerSecond0' already declared in this scope (DigitalClock).
+# 
+# End time: 14:59:53 on Oct 20,2019, Elapsed time: 0:00:00
+# Errors: 63, Warnings: 0
+# ** Error: D:/altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DigitalClock_run_msim_rtl_verilog.do line 10
+# D:/altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+F:/FPGAProject/DigitalClock {F:/FPGAProject/DigitalClock/DigitalClock.v}"
+# Loading project test1

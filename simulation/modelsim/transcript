@@ -1,0 +1,42 @@
+# Compile of timerMod.v was successful.
+# Compile of alarmClock.v was successful.
+# Compile of dateDisplay.v was successful.
+# Compile of DigitalClock.v failed with 63 errors.
+# Compile of FreDiv.v was successful.
+# Compile of hourCounter.v was successful.
+# Compile of iic_savemod.v was successful.
+# Compile of iicBasemod.v failed with 5 errors.
+# Compile of minCounter.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RAM_bb.v was successful.
+# Compile of RAM_inst.v failed with 1 errors.
+# Compile of smg_basemod.v was successful.
+# Compile of smg_encode_immdmod.v was successful.
+# Compile of smg_funcmod.v was successful.
+# Compile of stopWatch.v failed with 4 errors.
+# Compile of DigitalClock.vo was successful.
+# 17 compiles, 4 failed with 73 errors.
+# Compile of timerMod.v was successful.
+# Compile of alarmClock.v was successful.
+# Compile of dateDisplay.v was successful.
+# Compile of DigitalClock.v failed with 63 errors.
+# Compile of FreDiv.v was successful.
+# Compile of hourCounter.v was successful.
+# Compile of iic_savemod.v was successful.
+# Compile of iicBasemod.v failed with 5 errors.
+# Compile of minCounter.v was successful.
+# Compile of RAM.v was successful.
+# Compile of RAM_bb.v was successful.
+# Compile of RAM_inst.v failed with 1 errors.
+# Compile of smg_basemod.v was successful.
+# Compile of smg_encode_immdmod.v was successful.
+# Compile of smg_funcmod.v was successful.
+# Compile of DigitalClock.vo was successful.
+# 16 compiles, 3 failed with 69 errors.
+vsim work.hourCounter work.minCounter
+# vsim 
+# Start time: 15:12:54 on Oct 20,2019
+# Loading work.hourCounter
+# Loading work.minCounter
+# End time: 15:13:27 on Oct 20,2019, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 0

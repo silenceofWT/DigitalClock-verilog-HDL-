@@ -1,0 +1,76 @@
+module alarmClock(clk_200hz,EN, SW1,SW2,
+			      hour1,hour0,hour_set1,hour_set0,					  	      minute1,minute0, minute_set1,minute_set0,			 		      alarm,control_alarm, alarmclock_disp_select);		input  EN,SW1,SW2,clk_200hz; //SW1、SW2为闹钟设置键
+input  [3:0] hour1,hour0,minute1,minute0;//显示当前时间
+input control_alarm;  //闹钟控制键
+	output alarm;   //闹钟响铃输出
+output [3:0] alarmclock_disp_select; //闹钟设置位选信号
+output  [3:0] hour_set1,hour_set0,minute_set1,minute_set0;
+ reg [3:0] alarmclock_disp_select;
+reg alarm;
+reg [3:0] hour_set1,hour_set0;      //存放设置的小时
+reg [3:0] minute_set1,minute_set0;  //存放设置的分
+reg [2:0] disp_drive;      //设置闹钟时间时，数码管显示的动态位选择
+//闹钟一直工作（设置的闹钟时间与当前时间比较）
+always
+begin
+   if((hour_set1 == hour1)&&(hour_set0 == hour0) &&(minute_set1
+==minute1)&&(minute_set0==minute0)&&(control_alarm==1))
+	alarm <= 1'b1;   //相等，闹钟响
+   else if(control_alarm==0)
+	alarm <= 1'b0;   //不相等，输出1 
+end
+//闹钟设置中，按SW1一次，将移位一次，显示当前设置位
+always @(posedge SW1)
+begin
+    if(EN == 1'b1)
+	begin
+	     if(disp_drive != 3'b101)
+		   disp_drive <= disp_drive + 3'b1;
+	     else
+	      disp_drive <= 3'b000;
+	end
+end
+//当前位的闹钟数字设置，按SW2一次，数字增加1
+always @(posedge SW2)
+begin
+    case(disp_drive)
+		3'b000: begin         //000时，设置小时的高位
+			     if(hour_set1 < 4'b0010) 
+				  hour_set1 <= hour_set1 + 4'b1;
+                 else
+			        hour_set1 <= 4'b0;
+			   end
+	3'b001: begin        //001时，小时低位
+			     if((hour_set1 < 4'b0010)&&(hour_set0 < 4'b1001)) 
+				    hour_set0 <= hour_set0 + 4'b1;
+			     else if((hour_set1==4'b0010)&&(hour_set0 < 4'b0100))
+				    hour_set0 <= hour_set0 + 4'b1;
+			     else
+				   hour_set0 <= 4'b0;
+			  end
+		3'b010: begin     //010时，分钟高位
+			     if(minute_set1 < 4'b0101) 
+			   	 minute_set1 <= minute_set1 + 4'b1;
+			     else
+			   	 minute_set1 <= 4'b0;
+			  end
+	3'b011: begin    //011时，分钟低位
+			     if(minute_set0 < 4'b1001) 
+				  minute_set0 <= minute_set0 + 4'b1;
+			     else
+				  minute_set0 <= 4'b0;
+			   end
+	endcase
+end
+//闪烁显示
+always @(posedge clk_200hz)  //设置时闪烁频率
+begin
+    case(disp_drive) 
+		3'b000:  alarmclock_disp_select <= 6'b1000;
+		3'b001:  alarmclock_disp_select <= 6'b0100;
+		3'b010:  alarmclock_disp_select <= 6'b0010;
+		3'b011:  alarmclock_disp_select <= 6'b0001;
+		default: alarmclock_disp_select <= 6'b0000;
+    endcase  
+end
+endmodule

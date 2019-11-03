@@ -1,0 +1,47 @@
+# do DigitalClock.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:07:14 on Oct 20,2019
+# vlog -work work DigitalClock.vo 
+# -- Compiling module DigitalClock
+# 
+# Top level modules:
+# 	DigitalClock
+# End time: 16:07:15 on Oct 20,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:07:15 on Oct 20,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module DigitalClock_vlg_sample_tst
+# -- Compiling module DigitalClock_vlg_check_tst
+# -- Compiling module DigitalClock_vlg_vec_tst
+# 
+# Top level modules:
+# 	DigitalClock_vlg_vec_tst
+# End time: 16:07:15 on Oct 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "DigitalClock.do" 
+# Start time: 16:07:15 on Oct 20,2019
+# Loading work.DigitalClock_vlg_vec_tst
+# Loading work.DigitalClock
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading work.DigitalClock_vlg_sample_tst
+# Loading work.DigitalClock_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 13044 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(545)
+#    Time: 1 us  Iteration: 0  Instance: /DigitalClock_vlg_vec_tst/tb_out
+# End time: 16:07:16 on Oct 20,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

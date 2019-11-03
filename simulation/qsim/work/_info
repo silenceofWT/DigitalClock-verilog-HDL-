@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGAProject/DigitalClock/simulation/qsim
+vDigitalClock
+Z1 !s110 1571558835
+!i10b 1
+!s100 O]Y_=XgG057A4H0kVb@Md2
+Ih3@b=H5Z7T2gP^]o]QZPg0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1571558833
+8DigitalClock.vo
+FDigitalClock.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1571558834.601000
+!s107 DigitalClock.vo|
+!s90 -work|work|DigitalClock.vo|
+!i113 1
+Z4 o-work work
+n@digital@clock
+vDigitalClock_vlg_check_tst
+R1
+!i10b 1
+!s100 FVcjam:K1eXS7j]U9EeDH2
+I]:FE_efm7:]1IiC4h5G`h0
+R2
+R0
+Z5 w1571558831
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 68
+R3
+r1
+!s85 0
+31
+Z8 !s108 1571558835.104000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@digital@clock_vlg_check_tst
+vDigitalClock_vlg_sample_tst
+R1
+!i10b 1
+!s100 >z4NJ;E7nBzQzL?i5RQSg3
+I=jI?lnOB`DkM?>HUZ2N4E0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@digital@clock_vlg_sample_tst
+vDigitalClock_vlg_vec_tst
+R1
+!i10b 1
+!s100 ej3EZJ=VW:c`l`31T8N;O0
+IV8oV=>?i:n0EcUA4LZn?C2
+R2
+R0
+R5
+R6
+R7
+L0 549
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@digital@clock_vlg_vec_tst

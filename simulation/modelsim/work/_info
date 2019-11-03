@@ -1,0 +1,258 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGAProject/DigitalClock/simulation/modelsim
+valarmClock
+Z1 !s110 1571555522
+!i10b 1
+!s100 z25B<DcF;Ng6>o5RdFRR92
+IlgVIP0HdBHjK9=UzjlTO61
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1571149417
+8F:/FPGAProject/DigitalClock/alarmClock.v
+FF:/FPGAProject/DigitalClock/alarmClock.v
+L0 2
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1571555522.252000
+!s107 F:/FPGAProject/DigitalClock/alarmClock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/alarmClock.v|
+!i113 1
+Z4 o-work work
+nalarm@clock
+vdateDisplay
+R1
+!i10b 1
+!s100 ][3eRQJHX@zMJPdb`08Fl1
+IVL^O>f>lFhC[ci47kk4H52
+R2
+R0
+w1467902556
+8F:/FPGAProject/DigitalClock/dateDisplay.v
+FF:/FPGAProject/DigitalClock/dateDisplay.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571555522.376000
+!s107 F:/FPGAProject/DigitalClock/dateDisplay.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/dateDisplay.v|
+!i113 1
+R4
+ndate@display
+vDigitalClock
+!s110 1571555524
+!i10b 1
+!s100 ]32RUG8KSP2Mk<;UcHGHS2
+IR;BMX`R2O?<7Wcha:dS>31
+R2
+R0
+w1571554417
+8F:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo
+FF:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo
+L0 32
+R3
+r1
+!s85 0
+31
+!s108 1571555523.824000
+!s107 F:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/simulation/modelsim/DigitalClock.vo|
+!i113 1
+R4
+n@digital@clock
+vFreDiv
+R1
+!i10b 1
+!s100 UVo>lT^LoE:44nTA9lAHn2
+I3O@bE1^hzYoEjfLkZ7R1Q0
+R2
+R0
+Z5 w1571150030
+8F:/FPGAProject/DigitalClock/FreDiv.v
+FF:/FPGAProject/DigitalClock/FreDiv.v
+Z6 L0 21
+R3
+r1
+!s85 0
+31
+!s108 1571555522.618000
+!s107 F:/FPGAProject/DigitalClock/FreDiv.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/FreDiv.v|
+!i113 1
+R4
+n@fre@div
+vhourCounter
+R1
+!i10b 1
+!s100 zoBbZbL:[9:Wd7bDBk6@M0
+I2@m`G350RF_]=_@VoPGl^0
+R2
+R0
+w1571150029
+8F:/FPGAProject/DigitalClock/hourCounter.v
+FF:/FPGAProject/DigitalClock/hourCounter.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1571555522.726000
+!s107 F:/FPGAProject/DigitalClock/hourCounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/hourCounter.v|
+!i113 1
+R4
+nhour@counter
+viic_savemod
+R1
+!i10b 1
+!s100 7>WVPi;[T9>;ES]ZZ;o6T0
+ILzocl5WJ[<b`674^8QB]N0
+R2
+R0
+w1467618579
+8F:/FPGAProject/DigitalClock/iic_savemod.v
+FF:/FPGAProject/DigitalClock/iic_savemod.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571555522.830000
+!s107 F:/FPGAProject/DigitalClock/iic_savemod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/iic_savemod.v|
+!i113 1
+R4
+vminCounter
+Z7 !s110 1571555523
+!i10b 1
+!s100 W;J;f2J?C^`UIdNhzZ@413
+I>z]YWm84`D]Gcc@EW2XBh3
+R2
+R0
+R5
+8F:/FPGAProject/DigitalClock/minCounter.v
+FF:/FPGAProject/DigitalClock/minCounter.v
+L0 22
+R3
+r1
+!s85 0
+31
+!s108 1571555523.061000
+!s107 F:/FPGAProject/DigitalClock/minCounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/minCounter.v|
+!i113 1
+R4
+nmin@counter
+vRAM
+R7
+!i10b 1
+!s100 5<]_gaJK48?5D`YoknCPA3
+ILGF5CUB:6ZjL;3a`Q@Oj30
+R2
+R0
+w1467271517
+8F:/FPGAProject/DigitalClock/RAM_bb.v
+FF:/FPGAProject/DigitalClock/RAM_bb.v
+L0 34
+R3
+r1
+!s85 0
+31
+!s108 1571555523.287000
+!s107 F:/FPGAProject/DigitalClock/RAM_bb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/RAM_bb.v|
+!i113 1
+R4
+n@r@a@m
+vsmg_basemod
+R7
+!i10b 1
+!s100 fY<A^Qo?g0VTY3ZZLHn@X3
+I1ea>3oGenDS:joZ=^bjY43
+R2
+R0
+w1466305421
+8F:/FPGAProject/DigitalClock/smg_basemod.v
+FF:/FPGAProject/DigitalClock/smg_basemod.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571555523.502000
+!s107 F:/FPGAProject/DigitalClock/smg_basemod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/smg_basemod.v|
+!i113 1
+R4
+vsmg_encode_immdmod
+R7
+!i10b 1
+!s100 ^;e::3;OUEjA82jXU5_1D2
+I;LL:=_i?YkY:W<LnN@F102
+R2
+R0
+w1466305223
+8F:/FPGAProject/DigitalClock/smg_encode_immdmod.v
+FF:/FPGAProject/DigitalClock/smg_encode_immdmod.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571555523.609000
+!s107 F:/FPGAProject/DigitalClock/smg_encode_immdmod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/smg_encode_immdmod.v|
+!i113 1
+R4
+vsmg_funcmod
+R7
+!i10b 1
+!s100 lIcJg@0@HPhoAM4o<L8]51
+IWNLX]OE_U;OgkHD`m[3>X0
+R2
+R0
+R5
+8F:/FPGAProject/DigitalClock/smg_funcmod.v
+FF:/FPGAProject/DigitalClock/smg_funcmod.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1571555523.719000
+!s107 F:/FPGAProject/DigitalClock/smg_funcmod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/smg_funcmod.v|
+!i113 1
+R4
+vtimerMod
+R1
+!i10b 1
+!s100 I:n5X]HNMm;KC7^8??OcQ0
+I2<R9?BgOT[[A:6K2Md02b3
+R2
+R0
+w1467900586
+8F:/FPGAProject/DigitalClock/timerMod.v
+FF:/FPGAProject/DigitalClock/timerMod.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571555522.123000
+!s107 F:/FPGAProject/DigitalClock/timerMod.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/FPGAProject/DigitalClock/timerMod.v|
+!i113 1
+R4
+ntimer@mod

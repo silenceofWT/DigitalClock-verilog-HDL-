@@ -1,0 +1,112 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 21:58:29  June 18, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DigitalClock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY DigitalClock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:58:29  JUNE 18, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name VERILOG_FILE hourCounter.v
+set_global_assignment -name VERILOG_FILE minCounter.v
+set_global_assignment -name VERILOG_FILE DigitalClock.v
+set_global_assignment -name VERILOG_FILE smg_funcmod.v
+set_global_assignment -name VERILOG_FILE smg_encode_immdmod.v
+set_global_assignment -name VERILOG_FILE smg_basemod.v
+set_global_assignment -name VERILOG_FILE FreDiv.v
+set_global_assignment -name TCL_SCRIPT_FILE DigitalClock.tcl
+set_location_assignment PIN_E1 -to clk
+set_location_assignment PIN_N13 -to RESET
+set_location_assignment PIN_R14 -to DIG[0]
+set_location_assignment PIN_N16 -to DIG[1]
+set_location_assignment PIN_P16 -to DIG[2]
+set_location_assignment PIN_T15 -to DIG[3]
+set_location_assignment PIN_P15 -to DIG[4]
+set_location_assignment PIN_N12 -to DIG[5]
+set_location_assignment PIN_N15 -to DIG[6]
+set_location_assignment PIN_R16 -to DIG[7]
+set_location_assignment PIN_M11 -to SEL[5]
+set_location_assignment PIN_P11 -to SEL[4]
+set_location_assignment PIN_N11 -to SEL[3]
+set_location_assignment PIN_M10 -to SEL[2]
+set_location_assignment PIN_P9 -to SEL[1]
+set_location_assignment PIN_N9 -to SEL[0]
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name VERILOG_FILE output_files/timerSet.v
+set_location_assignment PIN_M16 -to SW_Sel
+set_location_assignment PIN_E16 -to SW_Add
+set_location_assignment PIN_M15 -to SW_Mode
+set_global_assignment -name VERILOG_FILE output_files/oclockPlay.v
+set_location_assignment PIN_C11 -to Buzzer
+set_global_assignment -name VERILOG_FILE dateDisplay.v
+set_global_assignment -name VERILOG_FILE alarmClock.v
+set_global_assignment -name VERILOG_FILE stopWatch.v
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name VERILOG_FILE output_files/dateSet.v
+set_global_assignment -name VERILOG_FILE output_files/microSecCounter.v
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS16
+set_global_assignment -name QIP_FILE RAM.qip
+set_global_assignment -name VERILOG_FILE iicBasemod.v
+set_global_assignment -name VERILOG_FILE iic_savemod.v
+set_location_assignment PIN_D1 -to SCL
+set_location_assignment PIN_E6 -to SDA
+set_global_assignment -name VERILOG_FILE timerMod.v
+set_location_assignment PIN_C9 -to LED_workModDisplay[2]
+set_location_assignment PIN_F9 -to LED_workModDisplay[1]
+set_location_assignment PIN_E10 -to LED_workModDisplay[0]
+set_global_assignment -name CDF_FILE Chain1.cdf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name CDF_FILE Chain2.cdf
+set_global_assignment -name CDF_FILE Chain3.cdf
+set_global_assignment -name CDF_FILE Chain4.cdf
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name CDF_FILE Chain6.cdf
+set_global_assignment -name CDF_FILE Chain10.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

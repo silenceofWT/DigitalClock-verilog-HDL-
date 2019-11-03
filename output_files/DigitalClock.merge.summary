@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sun Nov 03 12:24:56 2019
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : DigitalClock
+Top-level Entity Name : DigitalClock
+Family : Cyclone IV E
+Total logic elements : 3,095
+    Total combinational functions : 3,026
+    Dedicated logic registers : 798
+Total registers : 798
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 768
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

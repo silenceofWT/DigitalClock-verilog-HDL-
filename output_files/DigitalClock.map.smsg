@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at smg_encode_immdmod.v(32): extended using "x" or "z"
+Warning (10268): Verilog HDL information at oclockPlay.v(43): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at oclockPlay.v(57): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at iic_savemod.v(25): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at timerMod.v(167): always construct contains both blocking and non-blocking assignments

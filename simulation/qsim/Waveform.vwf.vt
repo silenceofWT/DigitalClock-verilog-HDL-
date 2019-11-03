@@ -1,0 +1,653 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/20/2019 16:07:11"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    DigitalClock
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module DigitalClock_vlg_sample_tst(
+	RESET,
+	SDA,
+	SW_Add,
+	SW_Mode,
+	SW_Sel,
+	clk,
+	sampler_tx
+);
+input  RESET;
+input  SDA;
+input  SW_Add;
+input  SW_Mode;
+input  SW_Sel;
+input  clk;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(RESET or SDA or SW_Add or SW_Mode or SW_Sel or clk)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module DigitalClock_vlg_check_tst (
+	Buzzer,
+	DIG,
+	LED_workModDisplay,
+	SCL,
+	SDA,
+	SEL,
+	sampler_rx
+);
+input  Buzzer;
+input [7:0] DIG;
+input [2:0] LED_workModDisplay;
+input  SCL;
+input  SDA;
+input [5:0] SEL;
+input sampler_rx;
+
+reg  Buzzer_expected;
+reg [7:0] DIG_expected;
+reg [2:0] LED_workModDisplay_expected;
+reg  SCL_expected;
+reg  SDA_expected;
+reg [5:0] SEL_expected;
+
+reg  Buzzer_prev;
+reg [7:0] DIG_prev;
+reg [2:0] LED_workModDisplay_prev;
+reg  SCL_prev;
+reg  SDA_prev;
+reg [5:0] SEL_prev;
+
+reg  Buzzer_expected_prev;
+reg [7:0] DIG_expected_prev;
+reg [2:0] LED_workModDisplay_expected_prev;
+reg  SCL_expected_prev;
+reg  SDA_expected_prev;
+reg [5:0] SEL_expected_prev;
+
+reg  last_Buzzer_exp;
+reg [7:0] last_DIG_exp;
+reg [2:0] last_LED_workModDisplay_exp;
+reg  last_SCL_exp;
+reg  last_SDA_exp;
+reg [5:0] last_SEL_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:6] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 6'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	Buzzer_prev = Buzzer;
+	DIG_prev = DIG;
+	LED_workModDisplay_prev = LED_workModDisplay;
+	SCL_prev = SCL;
+	SDA_prev = SDA;
+	SEL_prev = SEL;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	Buzzer_expected_prev = Buzzer_expected;
+	DIG_expected_prev = DIG_expected;
+	LED_workModDisplay_expected_prev = LED_workModDisplay_expected;
+	SCL_expected_prev = SCL_expected;
+	SDA_expected_prev = SDA_expected;
+	SEL_expected_prev = SEL_expected;
+end
+
+
+
+// expected DIG[2]
+initial
+begin
+	DIG_expected[2] = 1'bX;
+end 
+
+// expected DIG[0]
+initial
+begin
+	DIG_expected[0] = 1'bX;
+end 
+
+// expected DIG[1]
+initial
+begin
+	DIG_expected[1] = 1'bX;
+end 
+
+// expected DIG[3]
+initial
+begin
+	DIG_expected[3] = 1'bX;
+end 
+
+// expected DIG[4]
+initial
+begin
+	DIG_expected[4] = 1'bX;
+end 
+
+// expected DIG[5]
+initial
+begin
+	DIG_expected[5] = 1'bX;
+end 
+
+// expected DIG[6]
+initial
+begin
+	DIG_expected[6] = 1'bX;
+end 
+
+// expected DIG[7]
+initial
+begin
+	DIG_expected[7] = 1'bX;
+end 
+
+// expected Buzzer
+initial
+begin
+	Buzzer_expected = 1'bX;
+end 
+// expected LED_workModDisplay[ 2 ]
+initial
+begin
+	LED_workModDisplay_expected[2] = 1'bX;
+end 
+// expected LED_workModDisplay[ 1 ]
+initial
+begin
+	LED_workModDisplay_expected[1] = 1'bX;
+end 
+// expected LED_workModDisplay[ 0 ]
+initial
+begin
+	LED_workModDisplay_expected[0] = 1'bX;
+end 
+
+// expected SCL
+initial
+begin
+	SCL_expected = 1'bX;
+end 
+// expected SEL[ 5 ]
+initial
+begin
+	SEL_expected[5] = 1'bX;
+end 
+// expected SEL[ 4 ]
+initial
+begin
+	SEL_expected[4] = 1'bX;
+end 
+// expected SEL[ 3 ]
+initial
+begin
+	SEL_expected[3] = 1'bX;
+end 
+// expected SEL[ 2 ]
+initial
+begin
+	SEL_expected[2] = 1'bX;
+end 
+// expected SEL[ 1 ]
+initial
+begin
+	SEL_expected[1] = 1'bX;
+end 
+// expected SEL[ 0 ]
+initial
+begin
+	SEL_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(Buzzer_expected or Buzzer or DIG_expected or DIG or LED_workModDisplay_expected or LED_workModDisplay or SCL_expected or SCL or SDA_expected or SDA or SEL_expected or SEL)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected Buzzer = %b | expected DIG = %b | expected LED_workModDisplay = %b | expected SCL = %b | expected SDA = %b | expected SEL = %b | ",Buzzer_expected_prev,DIG_expected_prev,LED_workModDisplay_expected_prev,SCL_expected_prev,SDA_expected_prev,SEL_expected_prev);
+	$display("| real Buzzer = %b | real DIG = %b | real LED_workModDisplay = %b | real SCL = %b | real SDA = %b | real SEL = %b | ",Buzzer_prev,DIG_prev,LED_workModDisplay_prev,SCL_prev,SDA_prev,SEL_prev);
+`endif
+	if (
+		( Buzzer_expected_prev !== 1'bx ) && ( Buzzer_prev !== Buzzer_expected_prev )
+		&& ((Buzzer_expected_prev !== last_Buzzer_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Buzzer :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Buzzer_expected_prev);
+		$display ("     Real value = %b", Buzzer_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Buzzer_exp = Buzzer_expected_prev;
+	end
+	if (
+		( DIG_expected_prev[0] !== 1'bx ) && ( DIG_prev[0] !== DIG_expected_prev[0] )
+		&& ((DIG_expected_prev[0] !== last_DIG_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[0] = DIG_expected_prev[0];
+	end
+	if (
+		( DIG_expected_prev[1] !== 1'bx ) && ( DIG_prev[1] !== DIG_expected_prev[1] )
+		&& ((DIG_expected_prev[1] !== last_DIG_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[1] = DIG_expected_prev[1];
+	end
+	if (
+		( DIG_expected_prev[2] !== 1'bx ) && ( DIG_prev[2] !== DIG_expected_prev[2] )
+		&& ((DIG_expected_prev[2] !== last_DIG_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[2] = DIG_expected_prev[2];
+	end
+	if (
+		( DIG_expected_prev[3] !== 1'bx ) && ( DIG_prev[3] !== DIG_expected_prev[3] )
+		&& ((DIG_expected_prev[3] !== last_DIG_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[3] = DIG_expected_prev[3];
+	end
+	if (
+		( DIG_expected_prev[4] !== 1'bx ) && ( DIG_prev[4] !== DIG_expected_prev[4] )
+		&& ((DIG_expected_prev[4] !== last_DIG_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[4] = DIG_expected_prev[4];
+	end
+	if (
+		( DIG_expected_prev[5] !== 1'bx ) && ( DIG_prev[5] !== DIG_expected_prev[5] )
+		&& ((DIG_expected_prev[5] !== last_DIG_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[5] = DIG_expected_prev[5];
+	end
+	if (
+		( DIG_expected_prev[6] !== 1'bx ) && ( DIG_prev[6] !== DIG_expected_prev[6] )
+		&& ((DIG_expected_prev[6] !== last_DIG_exp[6]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[6] = DIG_expected_prev[6];
+	end
+	if (
+		( DIG_expected_prev[7] !== 1'bx ) && ( DIG_prev[7] !== DIG_expected_prev[7] )
+		&& ((DIG_expected_prev[7] !== last_DIG_exp[7]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIG[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIG_expected_prev);
+		$display ("     Real value = %b", DIG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIG_exp[7] = DIG_expected_prev[7];
+	end
+	if (
+		( LED_workModDisplay_expected_prev[0] !== 1'bx ) && ( LED_workModDisplay_prev[0] !== LED_workModDisplay_expected_prev[0] )
+		&& ((LED_workModDisplay_expected_prev[0] !== last_LED_workModDisplay_exp[0]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port LED_workModDisplay[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", LED_workModDisplay_expected_prev);
+		$display ("     Real value = %b", LED_workModDisplay_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_LED_workModDisplay_exp[0] = LED_workModDisplay_expected_prev[0];
+	end
+	if (
+		( LED_workModDisplay_expected_prev[1] !== 1'bx ) && ( LED_workModDisplay_prev[1] !== LED_workModDisplay_expected_prev[1] )
+		&& ((LED_workModDisplay_expected_prev[1] !== last_LED_workModDisplay_exp[1]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port LED_workModDisplay[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", LED_workModDisplay_expected_prev);
+		$display ("     Real value = %b", LED_workModDisplay_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_LED_workModDisplay_exp[1] = LED_workModDisplay_expected_prev[1];
+	end
+	if (
+		( LED_workModDisplay_expected_prev[2] !== 1'bx ) && ( LED_workModDisplay_prev[2] !== LED_workModDisplay_expected_prev[2] )
+		&& ((LED_workModDisplay_expected_prev[2] !== last_LED_workModDisplay_exp[2]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port LED_workModDisplay[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", LED_workModDisplay_expected_prev);
+		$display ("     Real value = %b", LED_workModDisplay_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_LED_workModDisplay_exp[2] = LED_workModDisplay_expected_prev[2];
+	end
+	if (
+		( SCL_expected_prev !== 1'bx ) && ( SCL_prev !== SCL_expected_prev )
+		&& ((SCL_expected_prev !== last_SCL_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SCL :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SCL_expected_prev);
+		$display ("     Real value = %b", SCL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_SCL_exp = SCL_expected_prev;
+	end
+	if (
+		( SDA_expected_prev !== 1'bx ) && ( SDA_prev !== SDA_expected_prev )
+		&& ((SDA_expected_prev !== last_SDA_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SDA :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SDA_expected_prev);
+		$display ("     Real value = %b", SDA_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_SDA_exp = SDA_expected_prev;
+	end
+	if (
+		( SEL_expected_prev[0] !== 1'bx ) && ( SEL_prev[0] !== SEL_expected_prev[0] )
+		&& ((SEL_expected_prev[0] !== last_SEL_exp[0]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[0] = SEL_expected_prev[0];
+	end
+	if (
+		( SEL_expected_prev[1] !== 1'bx ) && ( SEL_prev[1] !== SEL_expected_prev[1] )
+		&& ((SEL_expected_prev[1] !== last_SEL_exp[1]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[1] = SEL_expected_prev[1];
+	end
+	if (
+		( SEL_expected_prev[2] !== 1'bx ) && ( SEL_prev[2] !== SEL_expected_prev[2] )
+		&& ((SEL_expected_prev[2] !== last_SEL_exp[2]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[2] = SEL_expected_prev[2];
+	end
+	if (
+		( SEL_expected_prev[3] !== 1'bx ) && ( SEL_prev[3] !== SEL_expected_prev[3] )
+		&& ((SEL_expected_prev[3] !== last_SEL_exp[3]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[3] = SEL_expected_prev[3];
+	end
+	if (
+		( SEL_expected_prev[4] !== 1'bx ) && ( SEL_prev[4] !== SEL_expected_prev[4] )
+		&& ((SEL_expected_prev[4] !== last_SEL_exp[4]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[4] = SEL_expected_prev[4];
+	end
+	if (
+		( SEL_expected_prev[5] !== 1'bx ) && ( SEL_prev[5] !== SEL_expected_prev[5] )
+		&& ((SEL_expected_prev[5] !== last_SEL_exp[5]) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SEL[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SEL_expected_prev);
+		$display ("     Real value = %b", SEL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_SEL_exp[5] = SEL_expected_prev[5];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module DigitalClock_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg RESET;
+reg treg_SDA;
+reg SW_Add;
+reg SW_Mode;
+reg SW_Sel;
+reg clk;
+// wires                                               
+wire Buzzer;
+wire [7:0] DIG;
+wire [2:0] LED_workModDisplay;
+wire SCL;
+wire SDA;
+wire [5:0] SEL;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+assign SDA = treg_SDA;
+DigitalClock i1 (
+// port map - connection between master ports and signals/registers   
+	.Buzzer(Buzzer),
+	.DIG(DIG),
+	.LED_workModDisplay(LED_workModDisplay),
+	.RESET(RESET),
+	.SCL(SCL),
+	.SDA(SDA),
+	.SEL(SEL),
+	.SW_Add(SW_Add),
+	.SW_Mode(SW_Mode),
+	.SW_Sel(SW_Sel),
+	.clk(clk)
+);
+
+// clk
+initial
+begin
+	repeat(62)
+	begin
+		clk = 1'b0;
+		clk = #5000 1'b1;
+		# 5000;
+	end
+	clk = 1'b0;
+end 
+
+// RESET
+initial
+begin
+	RESET = 1'b1;
+	RESET = #610000 1'b0;
+end 
+
+// SW_Add
+initial
+begin
+	SW_Add = 1'b1;
+	SW_Add = #610000 1'b0;
+end 
+
+// SW_Mode
+initial
+begin
+	SW_Mode = 1'b0;
+	SW_Mode = #10000 1'b1;
+	SW_Mode = #620000 1'b0;
+end 
+
+// SW_Sel
+initial
+begin
+	SW_Sel = 1'b0;
+	SW_Sel = #10000 1'b1;
+	SW_Sel = #620000 1'b0;
+end 
+
+// SDA
+initial
+begin
+	treg_SDA = 1'bZ;
+end 
+
+DigitalClock_vlg_sample_tst tb_sample (
+	.RESET(RESET),
+	.SDA(SDA),
+	.SW_Add(SW_Add),
+	.SW_Mode(SW_Mode),
+	.SW_Sel(SW_Sel),
+	.clk(clk),
+	.sampler_tx(sampler)
+);
+
+DigitalClock_vlg_check_tst tb_out(
+	.Buzzer(Buzzer),
+	.DIG(DIG),
+	.LED_workModDisplay(LED_workModDisplay),
+	.SCL(SCL),
+	.SDA(SDA),
+	.SEL(SEL),
+	.sampler_rx(sampler)
+);
+endmodule
+

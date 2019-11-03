@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGAProject/DigitalClock/simulation/modelsim
+vhourCounter
+!s110 1571554792
+!i10b 1
+!s100 zoBbZbL:[9:Wd7bDBk6@M0
+IDPA9_4Z7<7e?bE]PU7lIY1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1571150029
+8F:/FPGAProject/DigitalClock/hourCounter.v
+FF:/FPGAProject/DigitalClock/hourCounter.v
+L0 21
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1571554792.802000
+!s107 F:/FPGAProject/DigitalClock/hourCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGAProject/DigitalClock|F:/FPGAProject/DigitalClock/hourCounter.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+F:/FPGAProject/DigitalClock
+nhour@counter
+vminCounter
+!s110 1571554793
+!i10b 1
+!s100 W;J;f2J?C^`UIdNhzZ@413
+Id_Q?RM5RB>LRj_RaH[4[i3
+R1
+R0
+w1571150030
+8F:/FPGAProject/DigitalClock/minCounter.v
+FF:/FPGAProject/DigitalClock/minCounter.v
+L0 22
+R2
+r1
+!s85 0
+31
+!s108 1571554793.066000
+!s107 F:/FPGAProject/DigitalClock/minCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGAProject/DigitalClock|F:/FPGAProject/DigitalClock/minCounter.v|
+!i113 1
+R3
+R4
+nmin@counter

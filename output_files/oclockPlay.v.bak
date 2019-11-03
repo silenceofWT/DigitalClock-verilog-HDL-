@@ -1,0 +1,55 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    22:17:08 06/25/2016 
+// Design Name: 
+// Module Name:    oclockPlay 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 时钟整点报时
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module oclockPlay(
+	clk,
+	rst_n,
+	alarm_radio,
+	minute1,minute0,
+	second1,second0,
+	);
+	
+	input f1khz,f500hz;
+	input[3:0]minute1,minute0,second1,second0;
+	input[7:0]minute,second; 
+	output alarm_radio;  //拼接之后时间
+	reg alarm_radio;  //报时输出信号
+	always@(minute1 or minute0 or second1 or second0)
+   begin
+		reg [7:0] minute,second;
+      {minute[7:0]}={minute1[3:0],minute0[3:0]}; //分拼接
+      {second[7:0]}={second1[3:0],second0[3:0]}; //秒拼接
+   end
+   always@(minute or second)
+      if(minute==8'h59)   //59分钟时
+        case(second)  //秒为50、52、54、56、58低音报时
+           8'h50,
+           8'h52,
+           8'h54,
+           8'h56,
+           8'h58:alarm_radio<=f500hz;
+           default:alarm_radio<=1'b0;
+        endcase
+      else if(minute==8'h00&&second==8'h00)   //00分00秒高音报时
+         alarm_radio<=f1khz;
+      else 
+         alarm_radio<=1'b0;
+
+endmodule

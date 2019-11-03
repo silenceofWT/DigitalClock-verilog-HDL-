@@ -1,0 +1,545 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -46.795
+TNS   : -4399.311
+
+Type  : Slow 1200mV 85C Model Setup 'RESET'
+Slack : -40.683
+TNS   : -1348.691
+
+Type  : Slow 1200mV 85C Model Setup '_dateSetMod'
+Slack : -25.122
+TNS   : -422.787
+
+Type  : Slow 1200mV 85C Model Setup 'dateDisplay:utt8|dayCarry'
+Slack : -9.250
+TNS   : -140.178
+
+Type  : Slow 1200mV 85C Model Setup 'minCounter:uut3|EO'
+Slack : -8.018
+TNS   : -123.654
+
+Type  : Slow 1200mV 85C Model Setup 'stopWatch:uut11|Enable'
+Slack : -6.435
+TNS   : -133.610
+
+Type  : Slow 1200mV 85C Model Setup 'FreDiv:uut4|clk1hz'
+Slack : -5.044
+TNS   : -134.624
+
+Type  : Slow 1200mV 85C Model Setup 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -3.356
+TNS   : -41.224
+
+Type  : Slow 1200mV 85C Model Setup 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -1.201
+TNS   : -8.591
+
+Type  : Slow 1200mV 85C Model Hold 'RESET'
+Slack : -1.938
+TNS   : -10.602
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.603
+TNS   : -8.779
+
+Type  : Slow 1200mV 85C Model Hold 'dateDisplay:utt8|dayCarry'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopWatch:uut11|Enable'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold '_dateSetMod'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FreDiv:uut4|clk1hz'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'minCounter:uut3|EO'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.799
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'RESET'
+Slack : -10.101
+TNS   : -101.306
+
+Type  : Slow 1200mV 85C Model Recovery 'dateDisplay:utt8|dayCarry'
+Slack : -6.854
+TNS   : -108.057
+
+Type  : Slow 1200mV 85C Model Recovery 'stopWatch:uut11|Enable'
+Slack : -5.490
+TNS   : -128.691
+
+Type  : Slow 1200mV 85C Model Recovery '_dateSetMod'
+Slack : -4.108
+TNS   : -68.936
+
+Type  : Slow 1200mV 85C Model Recovery 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -3.964
+TNS   : -61.945
+
+Type  : Slow 1200mV 85C Model Recovery 'minCounter:uut3|EO'
+Slack : -3.284
+TNS   : -51.791
+
+Type  : Slow 1200mV 85C Model Recovery 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -3.037
+TNS   : -24.927
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -2.485
+TNS   : -1010.870
+
+Type  : Slow 1200mV 85C Model Recovery 'FreDiv:uut4|clk1hz'
+Slack : -1.969
+TNS   : -16.102
+
+Type  : Slow 1200mV 85C Model Removal 'RESET'
+Slack : -3.722
+TNS   : -96.938
+
+Type  : Slow 1200mV 85C Model Removal '_dateSetMod'
+Slack : -1.291
+TNS   : -8.776
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : -1.090
+TNS   : -24.232
+
+Type  : Slow 1200mV 85C Model Removal 'FreDiv:uut4|clk1hz'
+Slack : -0.198
+TNS   : -2.592
+
+Type  : Slow 1200mV 85C Model Removal 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'stopWatch:uut11|Enable'
+Slack : 0.617
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.940
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'dateDisplay:utt8|dayCarry'
+Slack : 1.131
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'minCounter:uut3|EO'
+Slack : 1.770
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RESET'
+Slack : -6.274
+TNS   : -880.521
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -1169.670
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FreDiv:uut4|clk1hz'
+Slack : -1.487
+TNS   : -49.071
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dateDisplay:utt8|dayCarry'
+Slack : -1.487
+TNS   : -25.279
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'minCounter:uut3|EO'
+Slack : -1.487
+TNS   : -25.279
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -1.487
+TNS   : -25.279
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '_dateSetMod'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stopWatch:uut11|Enable'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -43.525
+TNS   : -4095.412
+
+Type  : Slow 1200mV 0C Model Setup 'RESET'
+Slack : -37.783
+TNS   : -1269.561
+
+Type  : Slow 1200mV 0C Model Setup '_dateSetMod'
+Slack : -24.213
+TNS   : -403.769
+
+Type  : Slow 1200mV 0C Model Setup 'dateDisplay:utt8|dayCarry'
+Slack : -8.637
+TNS   : -133.166
+
+Type  : Slow 1200mV 0C Model Setup 'minCounter:uut3|EO'
+Slack : -7.580
+TNS   : -116.177
+
+Type  : Slow 1200mV 0C Model Setup 'stopWatch:uut11|Enable'
+Slack : -5.969
+TNS   : -125.058
+
+Type  : Slow 1200mV 0C Model Setup 'FreDiv:uut4|clk1hz'
+Slack : -4.521
+TNS   : -121.228
+
+Type  : Slow 1200mV 0C Model Setup 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -3.107
+TNS   : -38.085
+
+Type  : Slow 1200mV 0C Model Setup 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -1.157
+TNS   : -7.937
+
+Type  : Slow 1200mV 0C Model Hold 'RESET'
+Slack : -2.516
+TNS   : -13.542
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.527
+TNS   : -7.581
+
+Type  : Slow 1200mV 0C Model Hold 'dateDisplay:utt8|dayCarry'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'stopWatch:uut11|Enable'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold '_dateSetMod'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FreDiv:uut4|clk1hz'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'minCounter:uut3|EO'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'RESET'
+Slack : -10.027
+TNS   : -113.159
+
+Type  : Slow 1200mV 0C Model Recovery 'dateDisplay:utt8|dayCarry'
+Slack : -6.568
+TNS   : -103.562
+
+Type  : Slow 1200mV 0C Model Recovery 'stopWatch:uut11|Enable'
+Slack : -5.162
+TNS   : -120.571
+
+Type  : Slow 1200mV 0C Model Recovery '_dateSetMod'
+Slack : -4.220
+TNS   : -72.798
+
+Type  : Slow 1200mV 0C Model Recovery 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -3.617
+TNS   : -56.174
+
+Type  : Slow 1200mV 0C Model Recovery 'minCounter:uut3|EO'
+Slack : -2.979
+TNS   : -46.562
+
+Type  : Slow 1200mV 0C Model Recovery 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -2.821
+TNS   : -23.095
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -2.150
+TNS   : -859.323
+
+Type  : Slow 1200mV 0C Model Recovery 'FreDiv:uut4|clk1hz'
+Slack : -1.609
+TNS   : -12.640
+
+Type  : Slow 1200mV 0C Model Removal 'RESET'
+Slack : -3.896
+TNS   : -90.684
+
+Type  : Slow 1200mV 0C Model Removal '_dateSetMod'
+Slack : -1.104
+TNS   : -7.407
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : -0.892
+TNS   : -19.431
+
+Type  : Slow 1200mV 0C Model Removal 'FreDiv:uut4|clk1hz'
+Slack : -0.121
+TNS   : -1.440
+
+Type  : Slow 1200mV 0C Model Removal 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'stopWatch:uut11|Enable'
+Slack : 0.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'dateDisplay:utt8|dayCarry'
+Slack : 1.130
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'minCounter:uut3|EO'
+Slack : 1.658
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -6.316
+TNS   : -811.795
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -1169.891
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FreDiv:uut4|clk1hz'
+Slack : -1.487
+TNS   : -53.401
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -1.487
+TNS   : -25.391
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'minCounter:uut3|EO'
+Slack : -1.487
+TNS   : -25.375
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dateDisplay:utt8|dayCarry'
+Slack : -1.487
+TNS   : -25.279
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '_dateSetMod'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|Enable'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -19.801
+TNS   : -1576.533
+
+Type  : Fast 1200mV 0C Model Setup 'RESET'
+Slack : -17.633
+TNS   : -560.298
+
+Type  : Fast 1200mV 0C Model Setup '_dateSetMod'
+Slack : -10.643
+TNS   : -179.852
+
+Type  : Fast 1200mV 0C Model Setup 'dateDisplay:utt8|dayCarry'
+Slack : -4.365
+TNS   : -65.981
+
+Type  : Fast 1200mV 0C Model Setup 'minCounter:uut3|EO'
+Slack : -3.814
+TNS   : -55.993
+
+Type  : Fast 1200mV 0C Model Setup 'stopWatch:uut11|Enable'
+Slack : -2.704
+TNS   : -45.558
+
+Type  : Fast 1200mV 0C Model Setup 'FreDiv:uut4|clk1hz'
+Slack : -2.479
+TNS   : -48.739
+
+Type  : Fast 1200mV 0C Model Setup 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -1.099
+TNS   : -13.897
+
+Type  : Fast 1200mV 0C Model Setup 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -0.214
+TNS   : -0.967
+
+Type  : Fast 1200mV 0C Model Hold 'RESET'
+Slack : -0.752
+TNS   : -2.736
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.391
+TNS   : -5.816
+
+Type  : Fast 1200mV 0C Model Hold 'dateDisplay:utt8|dayCarry'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FreDiv:uut4|clk1hz'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'minCounter:uut3|EO'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'stopWatch:uut11|Enable'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold '_dateSetMod'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'RESET'
+Slack : -4.495
+TNS   : -35.597
+
+Type  : Fast 1200mV 0C Model Recovery 'dateDisplay:utt8|dayCarry'
+Slack : -3.246
+TNS   : -51.048
+
+Type  : Fast 1200mV 0C Model Recovery 'stopWatch:uut11|Enable'
+Slack : -2.346
+TNS   : -42.659
+
+Type  : Fast 1200mV 0C Model Recovery 'minCounter:uut3|EO'
+Slack : -1.496
+TNS   : -23.684
+
+Type  : Fast 1200mV 0C Model Recovery '_dateSetMod'
+Slack : -1.371
+TNS   : -21.579
+
+Type  : Fast 1200mV 0C Model Recovery 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -1.362
+TNS   : -21.094
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.306
+TNS   : -565.504
+
+Type  : Fast 1200mV 0C Model Recovery 'FreDiv:uut4|clk1hz'
+Slack : -1.115
+TNS   : -16.885
+
+Type  : Fast 1200mV 0C Model Recovery 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -0.928
+TNS   : -7.271
+
+Type  : Fast 1200mV 0C Model Removal 'RESET'
+Slack : -1.255
+TNS   : -46.208
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : -0.671
+TNS   : -15.910
+
+Type  : Fast 1200mV 0C Model Removal '_dateSetMod'
+Slack : -0.240
+TNS   : -1.382
+
+Type  : Fast 1200mV 0C Model Removal 'FreDiv:uut4|clk1hz'
+Slack : -0.173
+TNS   : -2.742
+
+Type  : Fast 1200mV 0C Model Removal 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'stopWatch:uut11|Enable'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'dateDisplay:utt8|dayCarry'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'minCounter:uut3|EO'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RESET'
+Slack : -3.437
+TNS   : -378.371
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -803.849
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FreDiv:uut4|clk1hz'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dateDisplay:utt8|dayCarry'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'minCounter:uut3|EO'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|microSecCounter:uut5|EO'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|FreDiv:uut4|clk5ms'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '_dateSetMod'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stopWatch:uut11|Enable'
+Slack : 0.413
+TNS   : 0.000
+
+------------------------------------------------------------
